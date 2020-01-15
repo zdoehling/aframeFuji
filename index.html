@@ -2,12 +2,21 @@
   <head>
     <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.8.4/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/aframe-gltf-part-component/dist/aframe-gltf-part-component.min.js"></script>
   </head>
   <body>
     <a-scene>
+      
       <a-cone position="0 0 -20" src="textures/fuji.jpg" radius-bottom="1.5" radius-top="0.2" ></a-cone>
       <a-ocean position="-10 0 0" width="100" depth="100"></a-ocean>
       <a-sky src="textures/sky.jpg"></a-sky>
+      <a-gltf-model id="trees" src="objects/low poly assets/scene.gltf"></a-gltf-model>
+      <!-- Should be able to use this to get specific parts of a gtlf file
+        <a-assets>
+          <a-gltf-model id="trees" src="objects/low poly assets/scene.gltf"></a-gltf-model>
+        </a-assets>
+        <a-entity gltf-part="src: #trees; part: sign_48" material="color: black" position="0 10 0"></a-entity>
+      --->
     </a-scene>
   </body>
 </html>
