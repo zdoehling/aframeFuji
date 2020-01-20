@@ -6,17 +6,20 @@
   </head>
   <body>
     <a-scene>
-      <a-ocean position="-10 0 0" width="100" depth="100"></a-ocean>
+      <a-ocean position="-10 0 0" width="100" depth="100" ocean="width: 300; depth: 300; opacity: 1" id="ocean"></a-ocean>
       <a-sky src="textures/sky.jpg"></a-sky>
       <a-cone position="1.68384 2.48043 -120" scale="5 5 5" geometry="radiusBottom: 26.9; radiusTop: 0.28" material="" src="textures/grass.jpg" id="land"></a-cone>
       <a-gltf-model id="fuji" position="16 -3 -45.17" scale="12 12 12" src="objects/Fuji/GLTF_Fuji.gltf"></a-gltf-model>
-      <a-gltf-model id="fisherman" position="-30 -20 0" rotation="0 0 0" scale="1 1 1" src="objects/Fisherman/Fisherman.gltf"></a-gltf-model>
+      <a-gltf-model id="fisherman" position="-60.08 -109.57 100" rotation="0 129.8 0" scale="3 3 3" src="objects/Fisherman/Fisherman.gltf" gltf-model="objects/Fisherman/Fisherman.gltf"></a-gltf-model>
       <a-gltf-model id="tree" position="0.82 -0.77 0.68" rotation="-0.04 102.78 0.15" scale="2.53 2.71 2" src="objects/Tree/Tree.gltf" gltf-model="objects/Tree/Tree.gltf"></a-gltf-model>
       <a-gltf-model id="wave2" animation="property: position; from: -15.73 -14.77 26.61; to: -15.73 -16.77 26.61; dir: alternate; loop: true; easing: easeInOutSine;" src="objects/Wave/Wave_Big.gltf" gltf-model="objects/Wave/Wave_Big.gltf" position="-15.73 -14.77 26.61" rotation="-1.55 93.1 -0.17" scale="3 3 3"></a-gltf-model>
       <a-gltf-model id="wave" animation="property: position; from: -3.08169 -15.56486 26.61; to: -3.08169 -15.06486 26.61; dir: alternate; loop: true; easing: easeInOutSine;" src="objects/Wave/Wave_Big.gltf" gltf-model="objects/Wave/Wave_Big.gltf" position="-3.08169 -15.56486 26.61" rotation="-1.55 93.1 -0.17" scale="2.5 2.5 2.5"></a-gltf-model>
       <a-gltf-model id="wave3" animation="property: position; from: -8.30399 -5.61776 28.47; to: -8.30399 -6.1776 28.47; dir: alternate; loop: true; easing: easeInOutSine" src="objects/Wave/Wave_Big.gltf" gltf-model="objects/Wave/Wave_Big.gltf" position="-8.30399 -5.61776 28.47" rotation="-1.55 93.1 -0.17" scale=""></a-gltf-model>
       
-      <a-entity camera="" position="0.23532071405641444 1.6 0.8232868564308308" wasd-controls="acceleration: 300" rotation="1.3750987083139758 195.9515659347415 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
+      <a-entity camera="" position="-0.049233023323408946 1.7382416335181985 1.503641342394567" wasd-controls="acceleration: 300; fly: true" rotation="5.729577951308226 0.4583662361046586 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
+      <a-entity light="type: ambient; color: #a2d4fa; intensity: 1.7"></a-entity>
+      <a-entity light="color: #a2d4fa; intensity: 1;" position="-1.55149 12.70751 23.90768" id="moveLight" ></a-entity>
+      
       <!-- Should be able to use this to get specific parts of a gtlf file
         <a-gltf-model id="trees" src="objects/low poly assets/scene.gltf"></a-gltf-model>
         <a-assets>
