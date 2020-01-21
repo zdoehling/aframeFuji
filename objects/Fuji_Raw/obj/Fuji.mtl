@@ -1,0 +1,14 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl f5c336cf51084b40ade9c687504385ab_brush_Ink
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.800000
+illum 9
+map_Kd OLD/Fuji_Raw/fbx/Ink.png
+map_d OLD/Fuji_Raw/fbx/Ink.png
