@@ -8,7 +8,7 @@
     <a-scene>
       <a-ocean position="-10 0 0" width="100" depth="100" ocean="width: 300; depth: 300; opacity: 1" id="ocean"></a-ocean>
       <a-sky src="textures/sky.jpg"></a-sky>
-      <a-cone src="textures/cloud.png" position="1.68384 2.48043 -120" scale="5 5 5" geometry="radiusBottom: 26.9; radiusTop: 0.28" material="" src="textures/grass.jpg" id="land"></a-cone>
+      <a-cone position="1.68384 2.48043 -120" scale="5 5 5" geometry="radiusBottom: 26.9; radiusTop: 0.28" material="" color="white" id="land"></a-cone>
       <a-cone src="textures/cloud.png" animation="property: rotation; from: 0 60 0; to: 0 180 0; loop: true; easing: easeInOutSine; dur: 10000;" material="offset: 0 0.14; opacity: 0.66; repeat: 0.63 1.99; ambientOcclusionMapIntensity: 0.99; ambientOcclusionTextureRepeat: 0.83 1; emissive: #e3e3ca; emissiveIntensity: 2.32; roughness: 0.01" geometry="radiusBottom: 4.73; radiusTop: 1.57" id="cloud" scale="16.95 40 17" position="-14 9.00136 -35.23"></a-cone>
       <a-gltf-model id="fuji" position="16 -3 -45.17" scale="22 22 22" src="objects/Fuji/GLTF_Fuji.gltf"></a-gltf-model>
       <a-gltf-model id="fisherman" position="-60.08 -109.57 100" rotation="0 129.8 0" scale="3 3 3" src="objects/Fisherman/Fisherman.gltf" gltf-model="objects/Fisherman/Fisherman.gltf"></a-gltf-model>
@@ -18,7 +18,7 @@
       <a-gltf-model id="wave3" animation="property: position; from: -8.30399 -5.61776 28.47; to: -8.30399 -6.1776 28.47; dir: alternate; loop: true; easing: easeInOutSine" src="objects/Wave/Wave_Big.gltf" gltf-model="objects/Wave/Wave_Big.gltf" position="-8.30399 -5.61776 28.47" rotation="-1.55 93.1 -0.17" scale=""></a-gltf-model>
       
 
-      <a-entity camera="" position="-37.34224524900734 20.12526749955387 54.021299227169834" wasd-controls="acceleration: 300; fly: true" rotation="-21.65780465594512 -11.344564343590298 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera="" touch-controls="" id="cam"></a-entity>
+      <a-entity camera="" position="-37.34224524900734 20.12526749955387 54.021299227169834" wasd-controls="acceleration: 1000; fly: true" rotation="-21.65780465594512 -11.344564343590298 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera="" touch-controls="" id="cam"></a-entity>
       <a-entity light="color: #FFFFFF; intensity: 1.79; decay: 1.09; penumbra: 0.15; castShadow: true; shadowBias: 0.07; shadowRadius: 1.25" position="-31.34644 26.80066 77.72863" id="moveLight"></a-entity>
       <a-entity light="type: directional; color: #FFFFFF; intensity: 1;" position="-1.55149 12.70751 23.90768" id="moveLight" ></a-entity>
       
