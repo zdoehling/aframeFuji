@@ -42,7 +42,7 @@
     "chalk": "^1.1.1",
     "envify": "^4.0.0",
     "fs-extra": "^0.30.0",
-    "karma": "^1.2.0",
+    "karma": "^6.4.1",
     "karma-browserify": "^5.1.0",
     "karma-chai-shallow-deep-equal": "0.0.4",
     "karma-chrome-launcher": "^2.0.0",
